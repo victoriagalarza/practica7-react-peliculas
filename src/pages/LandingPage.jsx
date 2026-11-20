@@ -1,5 +1,7 @@
+import MovieGrid from '../components/MovieGrid.jsx'
+
 function LandingPage() {
-  return <p>Landing Page</p>
+  return <MovieGrid />
 }
 
 export default LandingPage

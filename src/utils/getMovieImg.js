@@ -1,5 +1,5 @@
-const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p'
+import placeholder from '../img/placeholder.svg'
 
-export function getMovieImg(path, width = 300) {
-  return path ? `${IMAGE_BASE_URL}/w${width}${path}` : null
+export function getMovieImg(path, width = 500) {
+  return path ? `https://image.tmdb.org/t/p/w${width}${path}` : placeholder
 }
