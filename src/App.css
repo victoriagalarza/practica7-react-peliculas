@@ -1,0 +1,70 @@
+/* ===== Header ===== */
+.appHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1.25rem 1.5rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ffb3c8 0%, var(--color-pink) 50%, var(--color-pink-strong) 100%);
+  border-radius: 0 0 32px 32px;
+  box-shadow: var(--shadow-hover);
+}
+
+.appTitle {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 2.75rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 2px 3px 0 rgba(214, 51, 108, 0.55);
+}
+
+.appSubtitle {
+  margin: 0.25rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* ===== Contenido principal ===== */
+.appMain {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* ===== Responsividad ===== */
+@media (max-width: 768px) {
+  .appHeader {
+    padding: 1rem 1rem 1.25rem;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .appTitle {
+    font-size: 2.1rem;
+  }
+
+  .appSubtitle {
+    font-size: 0.95rem;
+  }
+
+  .appMain {
+    padding: 1.75rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .appHeader {
+    position: static;
+  }
+
+  .appTitle {
+    font-size: 1.75rem;
+  }
+
+  .appSubtitle {
+    font-size: 0.85rem;
+  }
+}

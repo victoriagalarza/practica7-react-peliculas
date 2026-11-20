@@ -1,14 +1,20 @@
 import AppRouter from './routers/AppRouter.jsx'
+import Footer from './components/Footer.jsx'
+import './App.css'
 
 function App() {
   return (
     <>
-      <header>
-        <h1>🎬 Películas</h1>
+      <header className="appHeader">
+        <h1 className="appTitle">🎀 Películas ✨</h1>
+        <p className="appSubtitle">Descubre las películas más populares 💖</p>
       </header>
-      <main>
+
+      <main className="appMain">
         <AppRouter />
       </main>
+
+      <Footer />
     </>
   )
 }

@@ -1,23 +1,76 @@
-* {
+/* ===== Variables del tema rosita ===== */
+:root {
+  --color-bg: #fff0f6;
+  --color-surface: #ffffff;
+  --color-soft: #ffe3ee;
+  --color-pink: #ff8fab;
+  --color-pink-strong: #ff4d8d;
+  --color-pink-text: #d6336c; /* rosa oscuro legible sobre blanco */
+  --color-border: #ffd1e0;
+  --color-text: #5a1f3d; /* vino */
+  --color-text-muted: #85506b;
+
+  --font-body: "Quicksand", "Segoe UI", system-ui, sans-serif;
+  --font-title: "Pacifico", cursive;
+
+  --radius: 22px;
+  --radius-pill: 999px;
+  --shadow: 0 6px 18px rgba(255, 143, 171, 0.25);
+  --shadow-hover: 0 14px 30px rgba(255, 77, 141, 0.3);
+  --max-width: 1200px;
+
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Reset basico ===== */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, Arial, sans-serif;
-  background-color: #141414;
-  color: #f5f5f5;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  background-image: radial-gradient(#ffd6e5 1px, transparent 1px);
+  background-size: 22px 22px;
 }
 
-header {
-  padding: 1rem 2rem;
-  background-color: #000;
+/* El footer se queda abajo aunque haya poco contenido */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header h1 {
-  margin: 0;
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  font-weight: 700;
 }
 
-main {
-  padding: 1rem 2rem;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-pink-text);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-pink-strong);
+  outline-offset: 3px;
+}
+
+::selection {
+  background-color: var(--color-pink);
+  color: #ffffff;
 }
