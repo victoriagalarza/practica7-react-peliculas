@@ -1,0 +1,51 @@
+.backLink {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #f5c518;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: minmax(250px, 350px) 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.movieImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movieDetails h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.movieDetails p {
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .detailsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .movieImage {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .movieDetails h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
